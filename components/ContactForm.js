@@ -7,7 +7,7 @@ const maxLenght = value=>value && value.length>15 ?"Must be 15 character or less
 const number = value=>value && isNaN(Number(false))?"Must be a number":undefined;
 const minValue = min=>value=> value &&value<min ?`Must be least ${min}`:undefined;
 const minValue18 = minValue(18);
-const isValidEmail = value=> value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email) ?"Invalid email address":undefined;
+const isValidEmail = value=> value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ?"Invalid email address":undefined;
 
 // const validate = values=>{
 //     const errors ={};
@@ -25,8 +25,8 @@ const isValidEmail = value=> value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$
 // }
 const renderField =({place,keyboardType,meta:{touched,error,warning},input:{onChange,...restInput}})=>{
     return (
-        <View style={{flexDirection:'column',alignItems:'center'}}>
-            <View style={{flexDirection:'row',alignItems:'center',height:50}}>
+        <View style={{flexDirection:'column',alignItems:'center',height:50}}>
+            <View style={{flexDirection:'row',alignItems:'center'}}>
                 <TextInput style={{borderColor:'blue',borderWidth:1,height:37,width:220,padding:5}}
                 keyboardType={keyboardType} onChangeText={onChange}{...restInput} placeholder={place}> 
                 </TextInput>
@@ -37,13 +37,13 @@ const renderField =({place,keyboardType,meta:{touched,error,warning},input:{onCh
     );
 }
 const submit =values=>{
-    alert(`Valdation success. Values = ~ $(JSON.stringify(values)`);
+    alert(values.username);
 }
 const ContactComponent = props=>{
     const {handleSubmit} =props;
     return (
         <View style={{flex:1,flexDirection:'column',margin:40,justifyContent:'flex-start'}}>
-            <Text style={{fontSize:18,fontWeight:'bold',textAlign:'center',margin:10}}>Redux form sample</Text>
+            <Text style={{fontSize:18,fontWeight:'bold',textAlign:'center',margin:10}}>Form SignIn</Text>
             <Field keyboardType="default" place="Username" name="username" component={renderField} 
                 validate={[required,maxLenght]}
             />
