@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>C261DB2E-22F6-4310-950E-E07C1E0D3771</key>
+		<key>8CF85D73-EADB-4417-BC85-F9FA918332AE</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,9 +15,9 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C261DB2E-22F6-4310-950E-E07C1E0D3771.xcactivitylog</string>
+			<string>8CF85D73-EADB-4417-BC85-F9FA918332AE.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
 			<string>ggook2 project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -27,13 +27,42 @@
 			<key>signature</key>
 			<string>Building project ggook2 with scheme ggook2 and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>572255758.42318106</real>
+			<real>572327094.32479799</real>
 			<key>timeStoppedRecording</key>
-			<real>572255759.985587</real>
+			<real>572327095.50697398</real>
 			<key>title</key>
 			<string>Building project ggook2 with scheme ggook2 and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>C261DB2E-22F6-4310-950E-E07C1E0D3771</string>
+			<string>8CF85D73-EADB-4417-BC85-F9FA918332AE</string>
+		</dict>
+		<key>C8C1130A-DC21-4E41-9E08-658672DB4A90</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C8C1130A-DC21-4E41-9E08-658672DB4A90.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>ggook2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ggook2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project ggook2 with scheme ggook2 and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>572327557.55201101</real>
+			<key>timeStoppedRecording</key>
+			<real>572327560.37218595</real>
+			<key>title</key>
+			<string>Building project ggook2 with scheme ggook2 and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>C8C1130A-DC21-4E41-9E08-658672DB4A90</string>
 		</dict>
 	</dict>
 </dict>

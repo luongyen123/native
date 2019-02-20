@@ -5,36 +5,40 @@ import {createAppContainer, createBottomTabNavigator} from 'react-navigation';
 import HomeScreen from './components/HomeComponent';
 import SettingScreen from './components/SettingComponent';
 import InfoScreen from './components/InfoComponent';
+import TodoScreen from './components/TotoList';
 
 const Screen = createAppContainer(createBottomTabNavigator(
   {
+    
     Home:HomeScreen,
     Info:InfoScreen,
-    Setting:SettingScreen
+    TodoList:TodoScreen,
   },
   {
     defaultNavigationOptions:({navigation})=>({
-      tabBarIcon:({focused})=>{
+      tabBarIcon:({tintColor})=>{
         const {routeName} = navigation.state;
         if(routeName ==='Home'){
-          iconName = require('./icons/home.png');
-        } else if(routeName === 'Setting'){
-          iconName = require('./icons/setting.png');
-        } else if(routeName == 'Info'){
-          iconName =require('./icons/info.png')
+          iconName = (<Image source={require('./icons/home.png')} style={{width:20,height:20, tintColor:tintColor}}/>);         
+        } else if(routeName === 'TodoList'){
+
+          iconName = (<Image source={require('./icons/hashtag.png')} style={{width:20,height:20, tintColor:tintColor}}/>);
+        } else if(routeName === 'Info'){
+          // iconName =require('./icons/info.png')
+          iconName = (<Image source={require('./icons/hashtag.png')} style={{width:20,height:20, tintColor:tintColor}}/>);
         }   
-        return (<Image source={iconName} style={{width:20,height:20, tintColor:'red'}}/>);
-      }
+        return iconName;
+      },
     }),
     tabBarOptions:{
-      activeTintColor:'tomato',
+      activeTintColor:'#1f93f8',
       inactiveTintColor:'gray',
-      
-      showIcon:true,
-      showLabel:true
+      showLabel:false,
+      showIcon:true
     },
     swipeEnabled:true,
-    animationEnabled:true
+    animationEnabled:true,
+    
   }
 ));
 export default class App extends Component{

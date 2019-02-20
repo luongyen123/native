@@ -13,7 +13,7 @@ export default class ThirdComponent extends Component{
                 justifyContent:'center'
                 }}>
                 <Text style={{fontWeight:'bold',fontSize:22,color:'white'}}>
-                    This is ThirdComponent
+        a            This is ThirdComponent
                 </Text>
             </View>
         );

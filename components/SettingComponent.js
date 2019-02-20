@@ -8,6 +8,9 @@ import ThirdComponent from './ThirdComponent';
 const SettingScreen = createStackNavigator({
   MainScreen:{
     screen:MainComponent,
+    navigationOptions:{
+      headerTitle:'Setting'
+    }
   },
   DetailScreen:{
     screen:DetailComponent,

@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/st0wz/Documents/ggook2/node_modules/react-native/ReactCommon/jsi/jsi.cpp \
-  /Users/st0wz/Documents/ggook2/node_modules/react-native/ReactCommon/jsi/instrumentation.h \
-  /Users/st0wz/Documents/ggook2/node_modules/react-native/ReactCommon/jsi/jsi.h \
-  /Users/st0wz/Documents/ggook2/node_modules/react-native/ReactCommon/jsi/jsi-inl.h
+  /Users/st0wz/Documents/native/node_modules/react-native/ReactCommon/jsi/jsi.cpp \
+  /Users/st0wz/Documents/native/node_modules/react-native/ReactCommon/jsi/instrumentation.h \
+  /Users/st0wz/Documents/native/node_modules/react-native/ReactCommon/jsi/jsi.h \
+  /Users/st0wz/Documents/native/node_modules/react-native/ReactCommon/jsi/jsi-inl.h
